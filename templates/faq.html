@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #65d6ce;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(63, 143, 143); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/faq.css') }}">
+</head>
+<body>
+  <img class="zi" src="{{url_for('static', filename='c1.png')}}"" alt="">
+  <img class=" zq" src="{{url_for('static', filename='c2.png')}}" alt="">
+ 
+  <header class="main-head">
+    <nav>
+      <h1 id="logo"> <a href="{{ url_for('first') }}">Cartoonify </a> </h1>
+      <ul>
+        <li class="nav-page"><h1 class="line1">|</h2></li>
+
+        <li class="nav-page"><a href="https://drive.google.com/file/d/1ALkVQMjf001fT1sjEezvjB8mtXqp4AzD/view?usp=sharing" target="_blank">Report</a></li>
+        
+        <li class="nav-page"><a href="https://drive.google.com/file/d/1AntY4F3Tzdf4TUAQ6mUX7R8LUYxzLxmr/view?usp=sharing" target="_blank">Technical Paper</a></li>
+        <li class="nav-page1 nav-page"><a href="mailto:cartoonify@gmail.com" >Contact us</a></li>
+
+        <li><button class="button1"><a href="{{ url_for('cartoonize') }}">Upload<a></button></li>   
+      </ul>
+    </nav>
+  </header>
+<section>
+<h2 style="margin-bottom: 5%;">Frequently asked Question</h2>
+
+<button class="accordion">What is Cartoonify ?</button>
+<div class="panel">
+  <p>Cartoonify is a demo website of application of GAN which convert the image into anime like image </p>
+</div>
+
+<button class="accordion">What is our future idea ?</button>
+<div class="panel">
+  <p>To be able to cartoonize video seamlessly and also provide an app for the same purpose
+  </p>
+</div>
+
+<button class="accordion">Why did we choose this project ?</button>
+<div class="panel">
+  <p>
+    We had an interest in anime also the project idea was also pretty interesting <br>
+    
+    Our friends wanted to try it so we made a quick demo for images; which will be later extended to get videos. </p>
+</div>
+
+<button class="accordion">Who are our team members ?</button>
+<div class="panel">
+  <p>Rahul Maurya  <br>
+    Soham Lanke  <br>
+    Jayesh Rane <br>
+    Arjun Nair <br>
+    </p>
+</div>
+</section>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

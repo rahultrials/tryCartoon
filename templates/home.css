@@ -1,0 +1,241 @@
+/* -------------------------------Global ------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Alegreya", serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #65d6ce;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.5s ease-out;
+  border-radius: 25px;
+}
+button:hover {
+  background: #05948a;
+}
+.zi {
+  z-index: -1;
+  position: absolute;
+}
+.zq {
+  z-index: -1;
+  margin-top: 20%;
+  margin-left: 85%;
+  position: absolute;
+}
+
+/* ---------------------------------Nav bar --------------- */
+
+.main-head {
+  background-color: transparent;
+  color: black;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 50rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  flex: 0 1 10rem;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.nav-page1 {
+  margin-right: 50rem;
+}
+
+.line1 {
+  font-size: 3rem;
+}
+.nav-page a {
+  transition: background 0.5s ease-out;
+}
+.nav-page a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------- section1 -------------------------------*/
+
+.shape1 {
+  width: 95%;
+  height: 80%;
+  left: 3%;
+  top: 16%;
+  z-index: -1;
+  position: absolute;
+}
+.pg {
+  display: flex;
+}
+.co {
+  color: #654062;
+}
+.noC {
+  margin-left: 2rem;
+}
+.para1 {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.para1 h1 {
+  margin-top: 1rem;
+}
+.para1 h2 {
+  font-family: "Alegreya", serif;
+}
+.paraB {
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+.buttonB {
+  background: #654062;
+}
+.buttonB a {
+  color: white;
+}
+.buttonB:hover {
+  background: #50244c;
+  color: white;
+}
+
+.flexP {
+  display: flex;
+}
+.p1 {
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+
+/* ----------------------------------------- section 2 ----------------------------------  */
+.section2 {
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.para2 {
+  margin-left: 20%;
+  text-align: center;
+}
+.pp {
+  margin-top: 5%;
+}
+
+.pl {
+  font-family: "Alegreya", serif;
+}
+/* -------------------------------------------- section3 --------------------------------- */
+
+.shape2 {
+  width: 95%;
+  height: 80%;
+  left: 3%;
+  top: 165%;
+  z-index: -1;
+  position: absolute;
+}
+
+.para3 {
+  margin-bottom: 15%;
+  margin-left: 35%;
+  margin-right: 50rem;
+  margin-top: 47rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.para3 h1 {
+  margin-bottom: 1rem;
+}
+
+.buttonC {
+  background: #49c1b9;
+}
+.buttonC a {
+  color: white;
+}
+.buttonC:hover {
+  background: #3d8984;
+  color: white;
+}
+
+.flexP {
+  display: flex;
+}
+
+/* -------------------------------------------- section4 --------------------------------- */
+
+.footer {
+  top: 275%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background-color: rgba(101, 64, 98, 1);
+  color: white;
+  text-align: center;
+}
+
+.bottomleft {
+  bottom: 2%;
+  justify-content: left;
+  text-align: left;
+  left: 2%;
+  line-height: 3;
+}
+
+.bottomleft h2 {
+  color: white;
+}
+
+.bottomleft h5 {
+  color: white;
+}

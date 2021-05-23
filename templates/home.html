@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> -->
+        <!-- <link rel="stylesheet" href="home.css"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600;800&display=swap" rel="stylesheet">
+        <title>
+        Cartoonify
+        </title>
+    </head>
+<body>
+
+    <header class="main-head">
+        <nav>
+          <h1 id="logo"> <a href="{{ url_for('first') }}">Cartoonify </a> </h1>
+          <ul>
+            <li class="nav-page"><h1 class="line1">|</h2></li>
+
+            <li class="nav-page"><a href="https://drive.google.com/file/d/1ALkVQMjf001fT1sjEezvjB8mtXqp4AzD/view?usp=sharing" target="_blank">Report</a></li>
+
+            <li class="nav-page"><a href="https://drive.google.com/file/d/1AntY4F3Tzdf4TUAQ6mUX7R8LUYxzLxmr/view?usp=sharing" target="_blank">Technical Paper</a></li>
+            <li class="nav-page"><a href="{{ url_for('faq') }}">Help</a></li>
+            <li class="nav-page1 nav-page"><a href="mailto:cartoonify@gmail.com" >Contact us</a></li>
+
+            <li><button class="button1"><a href="{{ url_for('cartoonize') }}">Upload<a></button></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- ------------------------------------ SECTION 1 -------------------------------------->
+
+      <section class="section1">
+        <img class="shape1" src="{{url_for('static', filename='shape1.png')}}" alt="">
+        <!-- <img class="shape1" src="{{ url_for('static', filename='shape1.png')}}" alt=""> -->
+        <div class="flexP">
+        <div class="para1">
+            <div class="pg">
+            <h2 class="co" >UNIQUE </h2> <h2 class="noC"> & CLEAR Picturesque</h2> </div>
+            <h1>Photo to Cartoon Pioneers </h1>
+
+            <br>
+                <button class="paraB"><a href="app">Get Started<a></button>
+                <button class="paraB buttonB"><a href="app">How it Works<a></button>
+
+        </div>
+        <div>
+            <img class="p1" src="{{url_for('static', filename='person1.png')}}" alt="">
+            <!-- <img class="p1" src="{{url_for('static', filename='person1.png')}}" alt=""> -->
+        </div>
+    </div>
+
+      </section>
+<!-- ----------------------------------section 2 ---------------------------- -->
+
+<section class="section2">
+    <div class="flexP">
+        <div>
+            <img src="{{url_for('static', filename='person2.png')}}" alt="">
+            <!-- <img src="{{url_for('static', filename='person2.png')}}" alt=""> -->
+        </div>
+        <div class="para2">
+            <h2 class="pp pl">Get Cartoonify Pictures </h2>
+            <h1 class="pp">The internet’s source for <BR >animating your favourite image </h1>
+            <br>
+            <br>
+            <h1 class="pp">Now get your photo into a <BR> cartoonized  form with cartoonify!!</h1>
+        </div>
+</div>
+</section>
+<!-- ----------------------------------------------- secction3------------------------------- -->
+<section class="section3">
+        <img class="shape2" src="{{url_for('static', filename='shape1.png')}}" alt="">
+        <!-- <img class="shape2" src="Shape2.png" alt=""> -->
+        <div class="flexP">
+        <div class="para3">
+            <h2>Try out the Cartoonify Image Now</h2>
+            <h1>
+               Upload your choice of image and have fun !!!
+           </h1>
+            <br>
+                <button class="paraC buttonC"><a href="app">Upload Image<a></button>
+
+        </div>
+    </div>
+</section>
+
+<!-- ------------------------------------------------- section 4 ------------------------------------ -->
+
+<section class="section4">
+<div class="footer">
+
+        <div class="bottomleft">
+        <h2 >Cartoonify</h2>
+        <h5 >For any queries, <a style="color: white" href="mailto:cartooinfy@gmail.com" >contact us</a></h5>
+
+        <h5 style="font-size: 17px;">Cartoonify &#169 2021</h5>
+  </div>
+</div>
+
+</body>
+</html>
